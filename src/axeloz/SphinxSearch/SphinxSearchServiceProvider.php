@@ -1,5 +1,5 @@
-<?php 
-namespace sngrl\SphinxSearch;
+<?php
+namespace axeloz\SphinxSearch;
 
 use Illuminate\Support\ServiceProvider;
 

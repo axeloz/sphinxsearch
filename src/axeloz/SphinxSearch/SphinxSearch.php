@@ -1,5 +1,5 @@
-<?php 
-namespace sngrl\SphinxSearch;
+<?php
+namespace axeloz\SphinxSearch;
 
 class SphinxSearch
 {
@@ -208,9 +208,9 @@ class SphinxSearch
                 $config = isset($this->_config['mapping']) ? $this->_config['mapping']
                     : $this->_config[$this->_index_name];
 
-		// Get the model primary key column name    
+		// Get the model primary key column name
 		$primaryKey = isset($config['primaryKey']) ? $config['primaryKey'] : 'id';
-		    
+
                 if ($config) {
                     if (isset($config['repository'])) {
                         $result = call_user_func_array($config['repository'] . '::findInRange',
